@@ -217,6 +217,13 @@ footer a:hover{border-bottom-color:var(--ember)}
   .zeile{grid-template-columns:minmax(0,1fr);gap:.35rem}
   .zeile span{padding-top:0}
 }
+
+/* 19.09.: Rueckweg ins Haus */
+.heim{display:inline-flex;align-items:center;gap:.5em;min-height:44px;margin-bottom:clamp(.6rem,2vw,1.2rem);
+  font-family:var(--sans);font-size:var(--s-1);font-weight:600;letter-spacing:.06em;
+  color:#cfd6e0;text-decoration:none}
+.heim span{border-bottom:1px solid transparent;transition:border-color .25s}
+.heim:hover span,.heim:focus-visible span{border-bottom-color:var(--ember)}
 </style>
 </head>
 <body>
@@ -224,6 +231,7 @@ footer a:hover{border-bottom-color:var(--ember)}
 
 <header class="hero">
   <div class="spur">
+    <a class="heim" href="https://coachjay.de/">&larr; <span>coachjay.de</span></a>
     <p class="eyebrow">Für Studierende, Absolventinnen und Absolventen</p>
     <h1>Du bist nicht zu schlecht. Du hast nur <em>für die alte Welt</em> gelernt.</h1>
     <p class="lead">Einstiegsjobs sind nicht verschwunden. Sie verlangen im ersten Monat, was
@@ -474,7 +482,7 @@ footer a:hover{border-bottom-color:var(--ember)}
 <footer>
   <div class="spur">
     <div class="zeile-f">
-      <p>Jay Manuzon · Einstieg</p>
+      <p><a href="https://coachjay.de/">coachjay.de</a> · Jay Manuzon · Einstieg</p>
       <p><a href="impressum.html">Impressum</a> &nbsp;·&nbsp;
          <a href="datenschutz.html">Datenschutz</a> &nbsp;·&nbsp;
          <a href="mailto:jay@aivantum.com">jay@aivantum.com</a></p>
